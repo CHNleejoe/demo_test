@@ -1,0 +1,230 @@
+.centent{
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+	width: 1200px;
+}
+.centent .cart_kong{
+	height: 450px;
+	text-align: center;
+	background: url(../img/gwc_kong.png) no-repeat center 111px;
+	padding-top: 300px;
+	line-height: 64px;
+	font-size: 14px;
+	color: #333;
+}
+.centent .cart_kong p{margin: 0 !important;}
+.centent .cart_kong a{
+	padding: 0 5px;
+	color: #005fbe;
+}
+.centent .cart_kong a:hover{color: #DC0F50;}
+.centent .cart_you{
+	overflow: hidden;
+	width: 1140px;
+	margin: 0 auto;
+}
+.centent .cart_you h2{
+	height: 55px;
+	line-height: 55px;
+	color: #333;
+	font-size: 12px;
+}
+.centent .cart_you h2 i{
+	display: block;
+	width: 35px;
+	height: 16px;
+	line-height: 16px;
+	font-size: 12px;
+	float: left;
+	background: url(../img/h2_bg.png) no-repeat;
+	padding-left: 5px;
+	color: #fff;
+	margin: 19px 8px 0 0;
+}
+.centent .cart_you table{
+	border: 1px solid #d6d6d6;
+	font-size: 12px;
+}
+.centent .cart_you table th{
+	border-bottom: 1px solid #d6d6d6;
+	height: 43px;
+	background: #f1f1f1;
+	font-weight: normal;
+	text-align: center;
+}
+.centent .cart_you table th span{
+	padding-right: 40px;
+}
+.centent .cart_you table th input{
+	margin-right: 12px;
+	position: relative;
+	top: 2px;
+}
+.centent .cart_you table td{
+	height: 83px;
+	padding: 16px 0;
+	border-bottom: 1px solid #D6D6D6;
+	text-align: center;
+}
+.centent .cart_you table tr.curr td{
+	background: #fffceb;
+}
+.centent .cart_you table tr.curr td a p{
+	float: left;
+	width: 300px;
+	margin-right: 50px;
+	margin-left: 0 !important;
+	text-align: left;
+}
+.centent .cart_you table tr.curr td a{
+	display: block;
+	height: 83px;
+	position: relative;
+	overflow: hidden;
+}
+.centent .cart_you table tr.curr td a img{
+	width: 83px;
+	height: 83px;
+	float: left;
+	margin-right: 10px;
+}
+.centent .cart_you table tr.curr td a p{
+	float: left;
+	width: 300px;
+	margin-right: 50px;
+	text-align: left;
+}
+.centent .cart_you table tr.curr td a p font{
+    display: block;
+    height: 24px;
+    overflow: hidden;
+}
+.centent .cart_you table tr.curr td a p b{
+    height: 30px;
+    line-height: 15px;
+    overflow: hidden;
+    display: block;
+    color: #333;
+    font-size: 12px;
+}
+.centent .cart_you table tr.curr td a strong{
+    float: left;
+    font-weight: normal;
+    padding-top: 24px;
+    width: 135px;
+    display: block;
+    line-height: 15px;
+    color: #999;
+    text-align: left;
+}
+.centent .cart_you table tr.curr td span{
+	font-size: 12px;
+	font-weight: bold;
+	color: #333;
+}
+.centent .cart_you table tr.curr td label{
+    background: #fff;
+    display: inline-block;
+    width: 87px;
+    height: 26px;
+    border: 1px solid #cbcbcb;
+    overflow: hidden;
+}
+.centent .cart_you table tr.curr td label i{
+    display: inline-block;
+    width: 27px;
+    height: 24px;
+    line-height: 22px;
+    float: left;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+}
+.centent .cart_you table tr.curr td label input{
+    width: 28px;
+    float: left;
+    border-left: 1px solid #eaeaea;
+    text-align: center;
+    height: 24px;
+    line-height: 24px;
+    border-right: 1px solid #eaeaea;
+}
+.centent .cart_you table tr.curr td>a:hover p b{color: #DC0F50;}
+.centent .cart_you table tr.curr td>a.del:hover{color: #DC0F50;}
+.centent .cart_you table tr.curr td span.s2{
+	color: #E92D2F;
+	font-weight: normal;
+	font-size: 12px;	
+}
+.centent .cart_you table tr.curr td span.s1{
+	color: #DC0F50;
+}
+.centent .cart_you table tr.curr td a.del{
+	display: inline;
+	font-size: 12px;
+	color: #333;
+}
+.centent .cart_you .ft{
+    width: 1140px;
+    background: #FFF;
+    margin-bottom: 20px;
+    line-height: 52px;
+    height: 98px;
+    padding: 23px 0 23px 0px;
+    overflow: hidden;
+}
+.centent .cart_you .ft .ft_nei{
+	width: 1140px;
+	margin: 0 auto;
+}
+.centent .cart_you .ft span{
+    color: #999;
+    font-size: 18px;
+    float: right;
+    line-height: 68px;	
+}
+.centent .cart_you .ft span i{
+	color: #DC0F50;
+}
+.centent .cart_you .ft span font{
+	padding-right: 15px;
+	padding-left: 45px;;
+}
+.centent .cart_you .ft span font b{
+	font-size: 30px;
+	color: #DC0F50;
+	font-weight: bold;
+}
+.centent .cart_you .ft span a{
+    display: inline-block;
+    width: 120px;
+    height: 52px;
+    line-height: 52px;
+    background: #dc0f50;
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    position: relative;
+    top: -14px;
+}
+.centent .cart_you .ft span a:hover{
+	color: white;
+	opacity: 0.9;
+}
+.centent .cart_you .ft label{
+    display: block;
+    width: 75px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+.centent .cart_you .ft label input{
+	float: left;
+	margin: 20px 12px 0 0;
+}
+.centent .cart_you .ft a{
+	font-size: 14px;
+	color: #333;
+}
+.centent .cart_you .ft a:hover{color: #DC0F50;}

@@ -127,7 +127,6 @@ input, textarea, select, button {
 
 /*头部样式-links*/
 header{
-	height: 203px;
 	width: 100%;
 	border-bottom: 2px solid #dc0f50;
 }
@@ -138,7 +137,7 @@ header .header_links{
 	background: #e5e5e5;
 	color: #666666;
 }
-header .header_links a,p{float: left;}
+header .header_links a,header .header_links p{float: left;}
 header .header_links p{
 	display: inline-block;
 	cursor: pointer;
@@ -152,7 +151,7 @@ header .header_links ul li{
 	padding-right: 20px;
 	border-right:1px solid #a97979;
 }
-header .header_links ul li a,p{margin-left: 20px;}
+header .header_links ul li a,p{margin-left: 22px;}
 header .header_links ul li span{
 	padding:0 5px;
 	color: red;
@@ -246,9 +245,9 @@ header .header_content .logo{
 	height: 44px;
 	width: 236px;
 	float: left;
-	margin-top: 45px;
-	margin-left: 8px;
-	margin-right: 110px;
+	margin-top: 41px;
+	margin-left: 2px;
+	margin-right: 112px;
 }
 
 
@@ -310,7 +309,6 @@ header .header_content .head_cart{
 	position: relative;
 	line-height: 42px;
 	font-size: 14px;
-	font-weight: 900;
 	border: 1px solid #e5e5e5;
 }
 header .header_content .head_cart a{
@@ -331,8 +329,8 @@ header .header_content .head_cart a i{
 	line-height: 16px;
 	font-size: 12px;
 	position: absolute;
-	right: -8px;
-	top: -6px;
+	right: -9px;
+	top: -7px;
 	background: #dc0f50;
 	color: #fff;
 }
@@ -358,8 +356,14 @@ header .header_nav #header_nav1{
 	color: #fff;
 	padding: 0 20px;
 }
+header .header_nav #header_nav1.curr{
+	background: #333 url(../img/nav_b_bg.jpg) no-repeat 203px center;
+}
+header .header_nav #header_nav1:hover div{
+	display: block !important;
+}
 header .header_nav #header_nav1 .header_nav1_main{
-	display: none;
+	display: block;
 	width: 233px;
 	border: 1px solid #e5e5e5;
 	border-top: none;
@@ -402,7 +406,10 @@ header .header_nav>ul li a:hover{
 }
 
 /*尾部样式--war*/
-footer{height: 372px; background: #e5e5e5;overflow: hidden;}
+footer{
+	height: 362px; 
+	overflow: hidden;
+}
 footer .fot_war{
 	margin: 20px auto 45px auto;
 	width: 1200px;
@@ -454,6 +461,7 @@ footer .fot_centent .fot_cen_links dl dt{
 	font-weight: bold;
 	line-height: 30px;
 }
+footer .fot_centent .fot_cen_links dl dt a{color: #666;}
 footer .fot_centent .fot_cen_links dl dd{
 	font-size: 12px;
 	line-height: 20px;
@@ -466,7 +474,10 @@ footer .fot_centent .fot_cen_ewm{
 	width: 260px;
 	padding-right: 50px;
 }
-footer .fot_centent .fot_cen_ewm .fot_cen_ewm_img{margin-bottom: 10px;}
+footer .fot_centent .fot_cen_ewm .fot_cen_ewm_img{
+	height: 104px;
+	margin-bottom: 10px;
+	}
 footer .fot_centent .fot_cen_ewm .fot_cen_ewm_img li{
 	width: 79px;
 	float: left;
@@ -480,6 +491,7 @@ footer .fot_centent .fot_cen_ewm .fot_cen_ewm_img li{
 footer .fot_centent .fot_cen_ewm .fot_cen_ewm_img li img{width: 100%;}
 footer .fot_centent .fot_cen_ewm p{
 	padding-left: 35px;
+	margin-left: 0;
 	overflow: hidden;
 	background: url(../img/mobile.png) no-repeat;
 }
@@ -501,4 +513,20 @@ footer .fot_centent .fot_cen_ewm p i{
 footer .fot_copyright{
 	background: #333;
 	padding: 10px 0;
+	overflow: hidden;
+}
+footer .fot_copyright p{margin-left: 0px !important;}
+footer #friendLinks{
+	line-height: 26px;
+	color: #999;
+	font-size: 12px;
+	padding: 0 5px;
+}
+footer a{color: #999;}
+footer a:hover{color: #fff;}
+footer p:nth-child(2){
+	line-height: 26px;
+	color: #999;
+	font-size: 12px;
+	padding: 0 5px;
 }

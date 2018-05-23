@@ -1,0 +1,36 @@
+{
+	"res_code":1,
+	"res_msg":"success",
+	"res_body":{
+		"list" : [
+			{"id":1, "img": "../img/list/c797423bb13b460db82567fa23c8d288.jpg", "desc":"康宁Snapware沙拉碗", "prePrice": 447, "price": 258,"sellNum":111},
+			{"id":2, "img": "../img/list/ac1a71f525794ba288eb042d7b6a2709.jpg", "desc":"美国康宁多功能蒸烤箱", "prePrice": 3870, "price": 2580,"sellNum":110},
+			{"id":3, "img": "../img/list/25ee4c72904841e0bc4a4e3f31cc19c5.jpg", "desc":"美国康宁多功能蒸烤箱回馈组", "prePrice": 3870, "price": 2580,"sellNum":116},
+			{"id":4, "img": "../img/list/4249bd65412748d693f10e0616316e6f.jpg", "desc":"美国康宁西湖春晓系列餐具套组", "prePrice": 2999, "price": 1999,"sellNum":111},
+			{"id":5, "img": "../img/list/88996d5b66674509951f8584823ea730.jpg", "desc":"美国康宁鹅卵石微晶炉限量组", "prePrice": 2998, "price": 1999,"sellNum":6},
+			{"id":6, "img": "../img/list/43def6402ca74a48b6864627eaa10cc8.jpg", "desc":"美国康宁蒸汽破壁营养料理机", "prePrice": 2832, "price": 1880,"sellNum":4},
+			{"id":7, "img": "../img/list/15a3cbf1a1f24617a502e8de359f82bf.jpg", "desc":"美国康宁触摸双圈即热微晶炉", "prePrice": 2547, "price": 1698,"sellNum":111},
+			{"id":8, "img": "../img/list/4b2fcc85d3d34eca9d9ac33f85be65c3.jpg", "desc":"美国康宁鹅卵石微晶炉特供组", "prePrice": 2998, "price": 1999,"sellNum":10},
+			{"id":9, "img": "../img/list/95fa0523496e45ecb2518cb4ac9aa97e.jpg", "desc":"美国康宁鹅卵石微晶炉尊享组", "prePrice": 2998, "price": 1999,"sellNum":4},
+			{"id":10, "img": "../img/list/edf5ded9f140491faea602a045f2b470.jpg", "desc":"康宁鹅卵石微晶炉315家有专供款", "prePrice": 2549, "price": 1699,"sellNum":108},
+			{"id":11, "img": "../img/list/69a9b21032914798ae7b0f628eb53f00.jpg", "desc":"美国康宁烤霸旋风炉超级组", "prePrice": 1499, "price": 999,"sellNum":135},
+			{"id":12, "img": "../img/list/b33db372e13042fb80239fc2d1e9f57d.jpg", "desc":"康宁透明锅家有专供款", "prePrice": 1798, "price": 1199,"sellNum":10},
+			{"id":13, "img": "../img/list/c79886055539494385c1127ef81c75ee.jpg", "desc":"康宁中式炒锅家有庆生组", "prePrice": 3299, "price": 2199,"sellNum":3},
+			{"id":14, "img": "../img/list/8025a0b2e4a44af48c960bfe742fc27a.jpg", "desc":"美国康宁晶彩透明锅福临门套组", "prePrice": 1498, "price": 999,"sellNum":8},
+			{"id":15, "img": "../img/list/8a6cf23d3dc448559a6e0a2e99e80f8d.jpg", "desc":"美国康宁锅清爽厨房分享组", "prePrice": 3020, "price": 999,"sellNum":25}
+		],
+		"hotprod" : [
+			{"id":1, "img": "../img/list/1f64635dcf43401dbc339e985bbd8c17.jpg", "desc":"一农特级浓香型铁观音240g/盒 精装版", "price": 79},
+			{"id":2, "img": "../img/list/0d9832d1ec29459589e43a8e695156ee.jpg", "desc":"左家右厨 水果工具5件套（去瓤器+水果刨刀+冰淇淋勺+苹果取芯器+菜板）", "price": 75},
+			{"id":3, "img": "../img/list/e5d97faf2cdd4e3ab1c476c87da2627a.jpg", "desc":"植美村 红蓝管不脱妆裸色霜（更遮瑕）25ml*2", "price": 139},
+			{"id":4, "img": "../img/list/58a87577546142289262265978ffe16b.jpg", "desc":"魔盒 普罗旺斯芳香礼盒（玫瑰手霜100g+乳木果手霜100g+手足霜100g）", "price": 99},
+			{"id":5, "img": "../img/list/f43663ca6a9141ed8dc7ede66ca6dc1b.jpg", "desc":"芙施爱妮 经典优雅珍珠母贝手链 正圆强光8-12mm  ", "price": 79},
+			{"id":6, "img": "../img/list/923ef288312942de8956d9a8d6b4f18d.jpg", "desc":"seago 电动牙刷便携款1支（颜色可选）", "price": 39},
+			{"id":7, "img": "../img/list/5b7c5d04ad4f46a6aa53294dfd7fbd47.jpg", "desc":"侨丰 多功能干湿两用防滑衣架晾20只（颜色随机）", "price": 39},
+			{"id":8, "img": "../img/list/1e23df0e61c84f5ba0685c7d9f787afa.jpg", "desc":"澳大利亚·Devondale德运 高钙全脂奶粉 1kg", "price": 89},
+			{"id":9, "img": "../img/list/9059f1a459dc4796b7eed1e42c9e7a86.jpg", "desc":"ZYA新款纯色流苏风情女包（多色可选）", "price": 138},
+			{"id":10, "img": "../img/list/3cdc2f07ee2e4546892014e0d63e4613.jpg", "desc":"海贝尔贡缎提花天鹅绒四件套 200*230cm", "price": 198}
+			
+		]
+	}
+}

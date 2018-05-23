@@ -1,0 +1,131 @@
+.centent{
+	width: 1200px;
+	margin: 0 auto;
+	overflow: hidden;
+	background: #fff;
+	padding: 80px;
+}
+.centent .cen_left{
+	float: left;
+	width: 592px;
+	overflow: hidden;	
+}
+.centent .cen_left ul li{
+	overflow: hidden;
+	height: 40px;
+	line-height: 40px;
+	margin-bottom: 20px;
+}
+.centent .cen_left ul li b{
+	display: block;
+	width: 80px;
+	font-size: 14px;
+	color: #666;
+	float: left;
+	text-align: right;
+	margin-right: 12px;
+}
+.centent .cen_left ul li b i{
+	font-family: "宋体";
+	color: #dc0f50;
+	font-size: 14px;
+	margin-right: 3px;
+}
+.centent .cen_left ul li input{
+	width: 305px;
+	padding: 9px 20px;
+	height: 40px;
+	border: 1px solid #d6d6d6;
+	color: #666;
+	float: left;
+	margin-right: 15px;
+}
+.centent .cen_left ul li input.curr{
+	border-color: #e92d2f;
+}
+.centent .cen_left ul li input.text{
+	width: 180px;
+}
+.centent .cen_left ul li em{
+	display: block;
+	width: 20px;
+	height: 20px;
+	float: left;
+	background: url(../img/correct_bg.png) no-repeat;
+	margin-top: 10px;
+}
+.centent .cen_left ul li em.e1{
+	background: url(../img/error_bg.png) no-repeat 0 center;
+	font-size: 14px;
+	color: #e92d2f;
+	width: auto;
+	padding-left: 22px;
+	margin: 0;
+	line-height: 38px;
+	height: 40px;
+}
+.centent .cen_left ul li em.e2{
+    background: url(../img/error_bg.png) no-repeat 0 center;
+    font-size: 14px;
+    color: #dc0f50;
+    width: 156px;
+    padding-left: 22px;
+    margin: 0;
+    line-height: 20px;
+    height: 40px;
+}
+.centent .cen_left ul li button{
+	width: 110px;
+	height: 40px;
+	border: none;
+	text-align: center;
+	line-height: 40px;
+	background: #dc0f50;
+	color: #fff;
+	font-size: 14px;
+	float: left;
+	margin-right: 15px;
+	cursor: pointer;
+}
+.centent .cen_left ul li button:hover{opacity: 0.9;}
+.centent .cen_left p{
+    overflow: hidden;
+    margin-top: -15px;
+    text-align: right;
+    padding-right: 195px;
+    height: 48px;
+    line-height: 48px;
+    color: #666;
+    font-size: 14px;
+}
+.centent .cen_left p input{
+	margin: 0 5px 0 0;
+	position: relative;
+	top: 2px;
+}
+.centent .cen_left p.on{margin: 0;}
+.centent .cen_left p.on a{
+	width: 305px;
+	float: right;
+	height: 40px;
+	line-height: 40px;
+    display: block;
+    background: #dc0f50;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.centent .cen_left p.on a:hover{opacity: 0.9;}
+.centent .cen_left font{
+	display: block;	
+	line-height: 20px;
+	text-align: right;	
+	padding-right: 195px;
+}
+.centent .cen_left font a{
+	color: #666;
+	font-size: 16px;
+	text-decoration: underline;
+}
+.centent .cen_left font a:hover{color: #dc0f50;}
+.centent .login_img{float: right;}

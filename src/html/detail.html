@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+	<!--莫衷一是-->
+	<head>
+		<meta charset="UTF-8">
+		<title>惠有家-商品列表</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/detail.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header_links">
+				<div class="inner">
+					<a href="javascript:void(0)">收藏</a>
+					<ul>
+						<li>
+							<a href="../index.html">首页</a>
+							<a href="#">请登录</a>
+							<a href="#">免费注册</a>
+						</li>
+						<li>
+							<p href="#" id="headNum">购物车<span>0</span>件</p>
+							<a href="#">我的家有</a>
+							<p href="#" id="headYhq">可用优惠券<span>0</span>张</p>
+							<a href="#">我的收藏</a>
+						</li>
+						<li class="noborder">
+							<a href="#">手机版
+								<div class="ph_ewm">
+									<i></i>
+									<img src="../img/ewm022.png" alt="">
+									<em>家有购物APP</em>
+								</div>
+							</a>
+							<a href="#">微信版
+								<div class="wx_ewm">
+									<i></i>
+									<img src="../img/ewm011.jpg" alt="">
+									<em style="display:block;border-bottom:1px solid #eaeaea;">家有购物微信</em>							
+									<img src="../img/qrcode_for_gh_709bb851bf02_430.jpg">
+									<em>家有实验室</em>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				
+			<div class="header_content">
+				
+				<div class="inner">
+					<div class="logo">
+						<h1>
+							<a href="index.html">
+								<img src="../img/logo1.png" alt="家有购物" title="家有购物">
+							</a>
+						</h1>
+					</div>
+					
+					<div class="search">
+		                <input type="text" id="txtSearch" value="">
+		                <a id="searchBut" class="search_but" >搜 索</a>
+		                <p id="hotWord">
+		                	<a class="curr" onclick="Hotword.SetSearch('京城')">京城</a>
+		                	<a class="" onclick="Hotword.SetSearch('面膜')">面膜</a>
+		                	<a class="" onclick="Hotword.SetSearch('女装')">女装</a>
+		                	<a class="" onclick="Hotword.SetSearch('康宁')">康宁</a> 
+		                	<a class="" onclick="Hotword.SetSearch('智能')">智能</a> 
+		                	<a class="" onclick="Hotword.SetSearch('眼霜')">眼霜</a> 
+		                	<a class="" onclick="Hotword.SetSearch('男士')">男士</a> 
+		                	<a class="" onclick="Hotword.SetSearch('收纳')">收纳</a> 
+		                	<a class="" onclick="Hotword.SetSearch('护肤')">护肤</a> 
+		                </p>
+		                <!--搜索关联-->
+		                <div class="search_rel" id="searchRel"></div>
+		            </div>
+		            
+					<div class="head_cart"  id="headerCart">
+		                <a  class="cart_link">我的购物车<i id="iNum">0</i></a>
+		                
+		                <div class="ware_list" id="ware_list" style="display: none;">
+		                    <!--有商品-->
+		                    <div class="you" id="cartHas" style="display: none;">
+		                        <h2>最新加入商品</h2>
+		                        <ul class="bd description2" id="wrasList"></ul>
+		                        <div class="ft">
+		                            <span><a style="cursor:pointer" id="btnCart" num="202002-4">去购物车</a></span>
+		                            <font>共<i id="i_totalnum">0</i>件商品</font>
+		                            <font>合计<b id="i_totalprice">￥0.00</b>元</font>
+		                        </div>
+		                    </div>
+		                    <!--没有商品-->
+		                    <div class="wu" style="display: none;" id="cartNo">
+		                        购物车中还没有商品，赶紧去选购吧
+		                    </div>
+		                </div>
+		            </div>
+		            
+		        </div>    
+			</div>
+		
+			<div class="header_nav" style="display: block;">
+				<div id="header_nav1" class="curr">
+	                    全部商品分类
+	                    <div class="header_nav1_main" id="nav1Main" style="display: none;">
+	                        <div class="" id="nMain">
+	                        	<a href="javascript:void(0)">海外购</a>
+	                        	<a href="javascript:void(0)">生活电器</a>
+	                        	<a href="javascript:void(0)">品质厨房</a>
+	                        	<a href="javascript:void(0)">厨房电器</a>
+	                        	<a href="javascript:void(0)">生活家居</a>
+	                        	<a href="javascript:void(0)">布艺家纺</a>
+	                        	<a href="javascript:void(0)">服装服饰</a>
+	                        	<a href="javascript:void(0)">箱包配饰</a>
+	                        	<a href="javascript:void(0)">美妆个护</a>
+	                        	<a href="javascript:void(0)">食品饮料</a>
+	                        	<a href="javascript:void(0)">运动健康</a>
+	                        	<a href="javascript:void(0)">3C数码</a>
+	                       	</div>
+	                    </div>
+	            </div>
+	            <ul>
+	                <li><a href="index.html" class="curr">首页</a></li>
+	                <li><a href="javascript:void(0)">TV直播</a></li>
+	                <li><a href="javascript:void(0)">品牌惠</a></li>
+	                <li><a href="javascript:void(0)" target="_blank">家有购物APP</a></li>
+	                <li><a href="javascript:void(0)" target="_blank">家有尊享</a></li>
+	            </ul>
+	        </div>
+	
+		</header>
+		
+		
+		<!--主体-->
+		<div class="centent">
+			<h2>
+				<a href="list.html" id="btnAllProduct" >全部商品</a>
+				<span id="span_Category"></span>
+			</h2>
+			
+			<div class="show">
+				<div class="fl">
+					<div class="small">
+		                <a class="up curr"></a>
+		                <div style="position:relative;height:444px;overflow:hidden;">
+		                    <ul id="ulSlider" style="position:absolute;">
+		                    	<li class="curr">
+		                    		<img src="../img/detail/c72031d665c24cbfbecc0ca3a2667e90.jpg">
+		                    	</li>
+		                    	<li class="">
+		                    		<img src="../img/detail/7ea5e4e643374ddfa78e3c63f142eaf7.jpg">
+		                    	</li>
+		                    </ul>
+		                </div>
+		                <a class="down curr"></a>
+		            </div>
+		            <div class="big">
+            	    	<img id="zoom_img" src='../img/detail/c72031d665c24cbfbecc0ca3a2667e90.jpg' data-zoom-image="../img/detail/7ea5e4e643374ddfa78e3c63f142eaf7.jpg" />
+	                	<span id="sc" class="collection">收藏</span>
+	                </div>
+				</div>
+				
+				<div class="fr">
+					<h3 id="productName">康宁Snapware沙拉碗</h3>
+					<div class="bd">
+						<p class="price">
+							<b>¥258.00</b>
+							<em>¥447.00</em>
+							<a class="goShop" href="#">进入店铺</a>
+						</p>
+						<p class="num"><b>商品编号</b><span>958568</span></p>
+						<p class="shou"><b>月销</b><span>111件</span></p>
+						<div class="dui" id="div_productinfo">
+		                    <div class="tips" id="divProductProperty"></div>
+		                    <div id="divPropertyList" style="display: none;"><p module="202041" class="option" data-keycode="color_id" index="0"><b>颜色</b><font><a class="" data-valuecode="0" data-namecode="共同" num="202041-1">共同</a></font></p><p module="202041" class="option" data-keycode="style_id" index="1"><b>款式</b><font><a class="" data-valuecode="0" data-namecode="共同" num="202041-2">共同</a></font></p></div>
+		                    <p class="number"><b>购买数量</b><label><a class="jian" num="202042-2">-</a><input id="buycount" value="1" type="text"><a class="jia" num="202042-3">+</a></label><span></span></p>
+		                </div>
+		                <p class="list" id="pAuthorityLogo">
+		                	<span class="s1" style="">正品保障</span>
+			                <span class="s1" style="">全场包邮</span>
+			                <span class="s1" style="">支持7日无理由退货</span>
+		                </p>
+		                <div class="btn">
+		                	<a id="btnAddShoppingCart" class="a2">加入购物车</a>
+		                	<a id="btnBuy" class="a1" >立即购买</a>
+              				<b id="btnPhone" class="serv" style="">拨打<i>4008-678-888</i>，可语音下单~</b>
+		                </div>
+					</div>
+
+
+				</div>
+				
+			</div>
+			
+			
+			
+			<div class="content">
+				<ul class="hd" id="navDetail" style="width: 320px;">
+		            <li class="curr">商品详情</li>
+            		<li class="">规格参数</li>
+		        </ul>
+		        
+		        <div id="topImgInfo" class="img" style="display: block;">
+		        	<span class="tu" id="productImgContent">
+		        		<img src="../img/detail/093a155df3f345efb11d41b9c709320b.jpg" style="width:100%">
+		        		<img src="../img/detail/02868e41a62c466896b483304a192411.jpg" style="width:100%">
+		        		<img src="../img/detail/0b95405290aa41ec8d8e9a5ee9bcafc2.jpg" style="width:100%">
+		        		<img src="../img/detail/61138e288e064cd39268c0909692c69a.jpg" style="width:100%">
+		        		<img src="../img/detail/c296226ea6b84584b510f43fcafeac6b.jpg" style="width:100%">
+		        		<img src="../img/detail/c4e777e687874a77ab0c5c4d6283d1e2.jpg" style="width:100%">
+		        		<img src="../img/detail/70ec71f23f92477d8f07819b2dbb461f.jpg" style="width:100%">
+		        		<img src="../img/detail/2e982519d9d947abaeba5269e8cb9369.jpg" style="width:100%">
+		        		<img src="../img/detail/141b5df6e8b34de88750d84c48edc151.jpg" style="width:100%">
+		        		<img src="../img/detail/c9d2d33d1d494fd6af0198b8ac282ac8.jpg" style="width:100%">
+		        		<img src="../img/detail/84fd9602930f4ae3aa1577d2bb7cf1b1.jpg" style="width:100%">
+		        		<img src="../img/detail/8926a73d6d53453b9584ee759b90b329.jpg" style="width:100%">
+		        		<img src="../img/detail/d0a54923cbc049ab9d205758eb604b0e.jpg" style="width:100%">
+		        		<img src="../img/detail/2afa513eb8894e05af3bf7b726899b59.jpg" style="width:100%">
+		        		<img src="../img/detail/fc17f7e0e1fa4a148c574ba2a259d92c.jpg" style="width:100%">
+		        		<img src="../img/detail/a8766820efe04117ae5ed937ee7c3825.jpg" style="width:100%">
+		        		<img src="../img/detail/651be4d2949b408998b06399b1790091.jpg" style="width:100%">
+		        		<img src="../img/detail/aaf3f8e8d6444c0b89cd67f780c2c5d4.jpg" style="width:100%">
+		        		<img src="../img/detail/price.jpg" style="width:100%">
+		        	</span>
+		        	<span class="frome" id="span_sellerCompanyName">家有购物集团股份有限公司</span>
+		        </div>
+		        
+		        <div class="table" id="ulProductPropertyInfo" style="display: none;">
+		        	<ul>
+		        		<li><b>【商品编码】</b><span>958568</span></li>
+		        		<li><b>【品牌】</b><span>Snapware</span></li>
+		        		<li><b>【商品组成】</b><span>Snapware玻璃沙拉碗4件组*1</span></li>
+		        		<li><b>【配件】</b><span>含240ml沙拉碗（含盖）*1、820ml沙拉碗（含盖）*1、1900ml沙拉碗（含盖）*1、3700ml沙拉碗（含盖）*1、使用说明书*1</span></li>
+		        		<li><b>【规格】</b><span>240ml沙拉碗最大直约：12CM;高约：6.5CM；净重约（含盖）：0.28KG 820ml沙拉碗最大直径约：18CM;高约：8.5CM；净重约（含盖）：0.55KG 1900ml沙拉碗口最大直径约：23CM;高约：10CM；净重约（含盖）：1.08KG 3700ml沙拉碗最大直径约：28CM;高约：12.5CM；净重约（含盖）：1.61KG</span></li>
+		        		<li><b>【材质】</b><span>沙拉碗：玻璃碗盖：PP（聚丙烯）+硅胶材质</span></li>
+		        		<li><b>【颜色】</b><span>透明容器，碗盖子颜色随机</span></li>
+		        		<li><b>【适用范围】</b><span>可用于微波炉（不可烤箱加热及明火加热）</span></li>
+		        	</ul>
+		        </div>
+			</div>
+		</div>
+			
+		<!--尾部-->
+		<footer>
+			<ul class="fot_war" id="fotWar">
+				<li class="noborder">
+					<b>100%正品保证</b>
+					<span>质量有保障</span>
+				</li>
+				<li>
+					<b>在线支付 全场包邮</b>
+					<span>送货上门</span>
+				</li>
+				<li>
+					<b>支持银联刷卡付款</b>
+					<span>付款更安全</span>
+				</li>
+				<li>
+					<b>货到付款 开箱验货</b>
+					<span>满意才收货</span>
+				</li>
+				<li>
+					<b>7x24小时人工服务</b>
+					<span>微笑无时无刻 4008-678-210</span>
+				</li>
+			</ul>
+			
+			<div class="fot_centent">
+				<div class="fot_cen_links">
+					<dl>
+						<dt><a href="javascript:void(0)">关于我们</a></dt>
+						<dd><a href="javascript:void(0)">公司介绍</a></dd>
+						<dd><a href="javascript:void(0)">招聘信息</a></dd>
+						<dd><a href="javascript:void(0)">联系我们</a></dd>
+						<dd><a href="javascript:void(0)">用户隐私条款</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">订购指南</a></dt>
+						<dd><a href="javascript:void(0)">交易条款</a></dd>
+						<dd><a href="javascript:void(0)">注册/购物流程</a></dd>
+						<dd><a href="javascript:void(0)">退/换货</a></dd>
+						<dd><a href="javascript:void(0)">积分说明</a></dd>
+						<dd><a href="javascript:void(0)">发票指南</a></dd>
+						<dd><a href="javascript:void(0)">会员支队说明</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">配送服务</a></dt>
+						<dd><a href="javascript:void(0)">配送区域</a></dd>
+						<dd><a href="javascript:void(0)">配送时间</a></dd>
+						<dd><a href="javascript:void(0)">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">支付方式</a></dt>
+						<dd><a href="javascript:void(0)">网上支付</a></dd>
+						<dd><a href="javascript:void(0)">货到付款</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">合作专区</a></dt>
+						<dd><a href="javascript:void(0)">成为配货商</a></dd>
+						<dd><a href="javascript:void(0)">供应商系统</a></dd>
+						<dd><a href="javascript:void(0)">合作伙伴</a></dd>
+					</dl>
+				</div>
+				<div class="fot_cen_ewm">
+	                <ul class="fot_cen_ewm_img">
+	                    <li><img src="img/ewm011.jpg" alt="家有购物微信">家有购物微信</li>
+	                    <li><img src="img/ewm022.png" alt="家有购物APP">家有购物APP</li>
+	                </ul>
+	                <p>
+	                    <b>4008-678-210</b>
+	                    <i>客服 7x24小时 (全年无休)</i>
+	                </p>
+				</div>
+			</div>
+			
+			<div class="fot_copyright">
+	            <p id="friendLinks">友情链接： 
+	            	<a href="http://www.sj001.com/" target="_blank"> 南京手机报价</a>
+	            	<a href="http://www.e.cn" target="_blank">竞拍</a> 
+	            	<a href="http://www.aolaigo.com/ " target="_blank">奥莱购</a> 
+	            	<a href="http://wiki.smzdm.com/" target="_blank">商品百科</a>
+	            </p>
+	            <p>Copyright © 2008-2013 huijiayou.cn <a href="javascript:void(0)">家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
+			</div>
+			
+			
+		</footer>
+		<script type="text/javascript" src="../lib/jquery/jquery-1.12.4.min.js"></script>			
+		<script type="text/javascript" src="../lib/jquery-plugins/jquery.cookie.js"></script>
+		<script type="text/javascript" src="../js/detail.js"></script>
+	</body>
+</html>

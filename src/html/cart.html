@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+	<!--莫衷一是-->
+	<head>
+		<meta charset="UTF-8">
+		<title>惠有家-登录您的账户</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/cart.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header>
+			<div class="header_links">
+				<div class="inner">
+					<a href="javascript:void(0)">收藏</a>
+					<ul>
+						<li>
+							<a href="../index.html">首页</a>
+							<a href="#">请登录</a>
+							<a href="#">免费注册</a>
+						</li>
+						<li>
+							<p href="#" id="headNum">购物车<span>0</span>件</p>
+							<a href="#">我的家有</a>
+							<p href="#" id="headYhq">可用优惠券<span>0</span>张</p>
+							<a href="#">我的收藏</a>
+						</li>
+						<li class="noborder">
+							<a href="#">手机版
+								<div class="ph_ewm">
+									<i></i>
+									<img src="../img/ewm022.png" alt="">
+									<em>家有购物APP</em>
+								</div>
+							</a>
+							<a href="#">微信版
+								<div class="wx_ewm">
+									<i></i>
+									<img src="../img/ewm011.jpg" alt="">
+									<em style="display:block;border-bottom:1px solid #eaeaea;">家有购物微信</em>							
+									<img src="../img/qrcode_for_gh_709bb851bf02_430.jpg">
+									<em>家有实验室</em>
+								</div>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+				
+			<div class="header_content">
+				
+				<div class="inner">
+					<div class="logo">
+						<h1>
+							<a href="index.html">
+								<img src="../img/logo1.png" alt="家有购物" title="家有购物">
+							</a>
+						</h1>
+					</div>
+					
+					<div class="search">
+		                <input type="text" id="txtSearch" value="">
+		                <a id="searchBut" class="search_but" >搜 索</a>
+		                <p id="hotWord">
+		                	<a class="curr" onclick="Hotword.SetSearch('京城')">京城</a>
+		                	<a class="" onclick="Hotword.SetSearch('面膜')">面膜</a>
+		                	<a class="" onclick="Hotword.SetSearch('女装')">女装</a>
+		                	<a class="" onclick="Hotword.SetSearch('康宁')">康宁</a> 
+		                	<a class="" onclick="Hotword.SetSearch('智能')">智能</a> 
+		                	<a class="" onclick="Hotword.SetSearch('眼霜')">眼霜</a> 
+		                	<a class="" onclick="Hotword.SetSearch('男士')">男士</a> 
+		                	<a class="" onclick="Hotword.SetSearch('收纳')">收纳</a> 
+		                	<a class="" onclick="Hotword.SetSearch('护肤')">护肤</a> 
+		                </p>
+		                <!--搜索关联-->
+		                <div class="search_rel" id="searchRel"></div>
+		            </div>
+		            
+					<div class="head_cart"  id="headerCart">
+		                <a  class="cart_link">我的购物车<i id="iNum">0</i></a>
+		                
+		                <div class="ware_list" id="ware_list" style="display: none;">
+		                    <!--有商品-->
+		                    <div class="you" id="cartHas" style="display: none;">
+		                        <h2>最新加入商品</h2>
+		                        <ul class="bd description2" id="wrasList"></ul>
+		                        <div class="ft">
+		                            <span><a style="cursor:pointer" id="btnCart" num="202002-4">去购物车</a></span>
+		                            <font>共<i id="i_totalnum">0</i>件商品</font>
+		                            <font>合计<b id="i_totalprice">￥0.00</b>元</font>
+		                        </div>
+		                    </div>
+		                    <!--没有商品-->
+		                    <div class="wu" style="display: none;" id="cartNo">
+		                        购物车中还没有商品，赶紧去选购吧
+		                    </div>
+		                </div>
+		            </div>
+		            
+		        </div>    
+			</div>
+		
+			<div class="header_nav" style="display: block;">
+				<div id="header_nav1" class="curr">
+	                    全部商品分类
+	                    <div class="header_nav1_main" id="nav1Main" style="display: none;">
+	                        <div class="" id="nMain">
+	                        	<a href="javascript:void(0)">海外购</a>
+	                        	<a href="javascript:void(0)">生活电器</a>
+	                        	<a href="javascript:void(0)">品质厨房</a>
+	                        	<a href="javascript:void(0)">厨房电器</a>
+	                        	<a href="javascript:void(0)">生活家居</a>
+	                        	<a href="javascript:void(0)">布艺家纺</a>
+	                        	<a href="javascript:void(0)">服装服饰</a>
+	                        	<a href="javascript:void(0)">箱包配饰</a>
+	                        	<a href="javascript:void(0)">美妆个护</a>
+	                        	<a href="javascript:void(0)">食品饮料</a>
+	                        	<a href="javascript:void(0)">运动健康</a>
+	                        	<a href="javascript:void(0)">3C数码</a>
+	                       	</div>
+	                    </div>
+	            </div>
+	            <ul>
+	                <li><a href="index.html" class="curr">首页</a></li>
+	                <li><a href="javascript:void(0)">TV直播</a></li>
+	                <li><a href="javascript:void(0)">品牌惠</a></li>
+	                <li><a href="javascript:void(0)" target="_blank">家有购物APP</a></li>
+	                <li><a href="javascript:void(0)" target="_blank">家有尊享</a></li>
+	            </ul>
+	        </div>
+	
+		</header>
+		
+		
+		<!--主体-->
+		<div class="centent">
+			<div class="cart_kong" id="cartNull" style="display: none;">
+			    <!--=登录-->
+			    <p id="p_login" style="display:none;" >购物车内暂没有商品，您可以<a href="../index.html">去首页</a>挑选商品</p>
+			    <!--=未登录-->
+			    <p id="p_unlogin">购物车内暂没有商品，<a href="login.html">登录</a>后将显示您之前加入的商品 , 去<a href="../index.html">首页</a>挑选商品</p>
+			</div>
+			
+			<div class="cart_you" id="divCart" style="">
+			    <h2><i>包邮</i><span id="spanTitle">所有商品全场包邮(西藏、新疆、青海地区除外)</span></h2>
+			    
+			    <table id="tbCartList"  width="100%" cellspacing="0" cellpadding="0" border="0">
+			    	<tr>
+			    		<th colspan="2" width="98">
+					    	<label><input id="cbseletall_top" name="" value="" type="checkbox">全选</label>
+					    </th>
+			    		<th width="560"><span>商品</span></th>
+			    		<th width="125">单价( 元）</th>
+			    		<th width="150">数量</th>
+			    		<th width="105">小计（元）</th>
+			    		<th width="102">操作</th>
+			    	</tr>
+			    	<tr id="tr" class="curr">
+				    	<td width="60" colspan="1"><input name="" id="cb" checked="" type="checkbox"></td>
+				    	<td colspan="2" width="560">
+				    		<a onclick="CartInfo.Load_Product('958421')" num="202049-1"><img src="http://image-family.huijiayou.cn/cfiles/staticfiles/upload/2c117/b1704fda8c3343c6855f32134a9c44db.jpg" alt="" width="83" height="83">
+					    		<p id="tmp_p">
+					    			<font></font>
+					    			<b>威古氏防晒偏光太阳镜时尚套组</b>
+					    		</p>
+					    		<strong>颜色：共同<br>款式：共同</strong>
+				    		</a>
+				    	</td>
+				    	<td width="125"><span>123</span></td>
+				    	<td width="150"><label><i style="cursor:pointer" id="i_sub" class="curr" >-</i><input id="txtSkuNum"  value="1" type="tel"><i style="cursor:pointer" id="i_add">+</i></label><br></td>
+				    	<td width="105"><span class="s1">123</span></td>
+				    	<td width="102"><a class="del" onclick="" >删除</a></td>
+			    	</tr>
+			    </table>
+			    <table id="tbCartInvalid" width="100%" cellspacing="0" cellpadding="0" border="0"></table>
+			    <div class="ft" id="ft_01">
+			        <div class="ft_nei">
+			            <span>
+			                已选择<i id="sp_total">0</i>件商品			
+		                    <font>
+		                    	应付款：<b id="pay_money">￥399.00</b>
+	                    	</font>
+			                <a id="btnSubmit">去结算</a>
+			            </span>
+			            <label><input id="cbseletall_foot" value=""  type="checkbox">全选</label>
+			            <a id="btnDel" >删除选中的商品</a>
+			        </div>
+			    </div>
+			    <div id="ft_02" style="height: 112px; background: rgb(255, 255, 255) none repeat scroll 0% 0%; display: none;"></div>
+			</div>
+			
+		</div>
+			
+		<!--尾部-->
+		<footer>
+			<ul class="fot_war" id="fotWar">
+				<li class="noborder">
+					<b>100%正品保证</b>
+					<span>质量有保障</span>
+				</li>
+				<li>
+					<b>在线支付 全场包邮</b>
+					<span>送货上门</span>
+				</li>
+				<li>
+					<b>支持银联刷卡付款</b>
+					<span>付款更安全</span>
+				</li>
+				<li>
+					<b>货到付款 开箱验货</b>
+					<span>满意才收货</span>
+				</li>
+				<li>
+					<b>7x24小时人工服务</b>
+					<span>微笑无时无刻 4008-678-210</span>
+				</li>
+			</ul>
+			
+			<div class="fot_centent">
+				<div class="fot_cen_links">
+					<dl>
+						<dt><a href="javascript:void(0)">关于我们</a></dt>
+						<dd><a href="javascript:void(0)">公司介绍</a></dd>
+						<dd><a href="javascript:void(0)">招聘信息</a></dd>
+						<dd><a href="javascript:void(0)">联系我们</a></dd>
+						<dd><a href="javascript:void(0)">用户隐私条款</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">订购指南</a></dt>
+						<dd><a href="javascript:void(0)">交易条款</a></dd>
+						<dd><a href="javascript:void(0)">注册/购物流程</a></dd>
+						<dd><a href="javascript:void(0)">退/换货</a></dd>
+						<dd><a href="javascript:void(0)">积分说明</a></dd>
+						<dd><a href="javascript:void(0)">发票指南</a></dd>
+						<dd><a href="javascript:void(0)">会员支队说明</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">配送服务</a></dt>
+						<dd><a href="javascript:void(0)">配送区域</a></dd>
+						<dd><a href="javascript:void(0)">配送时间</a></dd>
+						<dd><a href="javascript:void(0)">验货与签收</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">支付方式</a></dt>
+						<dd><a href="javascript:void(0)">网上支付</a></dd>
+						<dd><a href="javascript:void(0)">货到付款</a></dd>
+					</dl>
+					<dl>
+						<dt><a href="javascript:void(0)">合作专区</a></dt>
+						<dd><a href="javascript:void(0)">成为配货商</a></dd>
+						<dd><a href="javascript:void(0)">供应商系统</a></dd>
+						<dd><a href="javascript:void(0)">合作伙伴</a></dd>
+					</dl>
+				</div>
+				<div class="fot_cen_ewm">
+	                <ul class="fot_cen_ewm_img">
+	                    <li><img src="img/ewm011.jpg" alt="家有购物微信">家有购物微信</li>
+	                    <li><img src="img/ewm022.png" alt="家有购物APP">家有购物APP</li>
+	                </ul>
+	                <p>
+	                    <b>4008-678-210</b>
+	                    <i>客服 7x24小时 (全年无休)</i>
+	                </p>
+				</div>
+			</div>
+			
+			<div class="fot_copyright">
+	            <p id="friendLinks">友情链接： 
+	            	<a href="http://www.sj001.com/" target="_blank"> 南京手机报价</a>
+	            	<a href="http://www.e.cn" target="_blank">竞拍</a> 
+	            	<a href="http://www.aolaigo.com/ " target="_blank">奥莱购</a> 
+	            	<a href="http://wiki.smzdm.com/" target="_blank">商品百科</a>
+	            </p>
+	            <p>Copyright © 2008-2013 huijiayou.cn <a href="javascript:void(0)">家有购物集团有限公司北京分公司</a> 版权所有 黔ICP备13002365号  增值电信业务经营许可证：黔B2-20120036</p>
+			</div>
+			
+			
+		</footer>
+		<script type="text/javascript" src="../lib/jquery/jquery-1.12.4.min.js"></script>			
+		<script type="text/javascript" src="../lib/jquery-plugins/jquery.cookie.js"></script>			
+	</body>
+</html>
