@@ -36,7 +36,7 @@
 								<img src="${this.imgs[i].src}">
 							</a>
 						</li>`;
-				circles += `<i ${ i == 0 ? 'class="current"' : ''}></i>`;
+				circles += `<i ${ i == 0 ? 'class="current"' : ''}>${i+1}</i>`;
 			}
 
 			// 向前/后翻页DOM结构
@@ -136,5 +136,4 @@
 			c.autoPlay();
 		});
 	}
-	
 })(jQuery);

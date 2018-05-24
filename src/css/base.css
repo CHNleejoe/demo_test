@@ -201,6 +201,15 @@ header .header_links ul li:last-child .ph_ewm em{
     color: #333;
     line-height: 44px;
 }
+#searchRel{
+	overflow: hidden;
+	width: 400px;
+	position: absolute;
+	border: 1px solid #e5e5e5;
+	background: #fff;
+	left: 0;
+	top: 44px;
+}
 header .header_links ul li:last-child a:first-child:hover .ph_ewm{display: block;}
 header .header_links ul li:last-child .wx_ewm{
 	display: none;
@@ -363,7 +372,7 @@ header .header_nav #header_nav1:hover div{
 	display: block !important;
 }
 header .header_nav #header_nav1 .header_nav1_main{
-	display: block;
+	display: none;
 	width: 233px;
 	border: 1px solid #e5e5e5;
 	border-top: none;

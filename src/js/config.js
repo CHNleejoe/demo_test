@@ -1,18 +1,23 @@
 require.config({
 	baseUrl : "/",
 	paths : {
-		jquery : "/project/project/dist/lib/jquery/jquery-1.12.4.min",
-		artTemplate : "/project/project/dist/lib/artTemplate/template-web",
-		cookie : "/project/project/dist/lib/jquery-plugins/jquery.cookie",
-		fly : "/project/project/dist/lib/jquery-plugins/jquery.fly.min",
-		zoom : "/project/project/dist/lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
-		load : "/project/project/dist/js/loadHeadAndFooter"
+		jquery : "/lib/jquery/jquery-1.12.4.min",
+		artTemplate : "/lib/artTemplate/template-web",
+		cookie : "/lib/jquery-plugins/jquery.cookie",
+		fly : "/lib/jquery-plugins/jquery.fly.min",
+		zoom : "/lib/jquery-plugins/jquery.elevateZoom-3.0.8.min",
+		load : "/js/loadHeadAndFooter",
+		xmcarousel :"/js/xm_carousel/jquery.xmcarousel",
+		base : "/js/base"
 	},
 	shim : {
 		fly : {
 			deps : ["jquery"]
 		},
 		zoom : {
+			deps : ["jquery"]
+		},
+		xmcarousel : {
 			deps : ["jquery"]
 		}
 	}

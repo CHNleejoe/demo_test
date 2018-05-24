@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<!--莫衷一是-->
+	<head>
+		<meta charset="UTF-8">
+		<title>惠有家-登录您的账户</title>
+		<link rel="stylesheet" type="text/css" href="../css/base.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/buy.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		<header></header>
+		
+		
+		<!--主体-->
+		<div class="centent">
+			<div class="order">
+				<div class="address">
+			        <div class="hd">
+			        	<span>
+			        		<a id="addAddress">添加收货地址</a>
+			        	</span>
+			        	<h2>确认收货地址</h2>
+			        </div>
+			        <div class="bd">
+			            <ul id="ulAddressList"></ul>
+			        </div>
+			    </div>
+			    
+			    <div class="payment">
+			    	<div class="hd"><h2>支付方式</h2></div>
+			    	<div class="bd">
+			    		<dl>
+			    			<dt class="curr">
+			    				<label for="rd_zxzf">
+			    					<input id="rd_zxzf" name="radio1" checked="" value="" type="radio">在线支付
+			    				</label>
+			    			</dt>
+			    			<dd id="quan" >
+			    				<p id="p1">
+			    					<a class="curr">
+			    						<i></i>
+			    						<img src="../img/bank-65.jpg" alt="支付宝">
+			    					</a>
+			    					<a>
+			    					<i></i>
+			    					<img src="../img/bank-76.jpg" alt="微信">
+			    					</a>
+			    					<a >
+			    					<i></i>
+			    					<img src="../img/bank-62.jpg" alt="银联支付">
+			    					</a>
+			    				</p>
+			    				<p id="p2">
+			    					<a >
+				    					<i></i>
+				    					<img src="../img/bank-1.jpg" alt="招商银行">
+			    					</a>
+			    					<a >
+			    						<i></i>
+			    						<img src="../img/bank-2.jpg" alt="建设银行">
+			    					</a>
+			    					<a >
+				    					<i></i>
+				    					<img src="../img/bank-3.jpg" alt="工商银行">
+			    					</a>
+			    					<a >
+			    						<i></i>
+			    						<img src="../img/bank-42.jpg" alt="兴业银行">
+			    					</a>
+			    					<a>
+			    						<i></i>
+			    						<img src="../img/bank-47.jpg" alt="交通银行">
+			    					</a>
+			    					
+			    				</p>
+			    				<span>更多</span>
+			    			</dd>
+			    			
+			    			<dt style="">
+			    				<label for="rd_hdfk">
+			    					<input id="rd_hdfk" name="radio1" value=""  type="radio">货到付款
+			    				</label>
+			    			</dt>
+			    			
+			    		</dl>
+			    	</div>
+			    </div>
+			    
+			    <div class="bill">
+			        <div class="hd"><h2>如需索要发票请联系客服 010-83035758</h2></div>
+			        <div class="bd"></div>
+		        </div>
+			    
+			    <div class="confirm">
+			    	<div class="hd"><h2>订单确认</h2></div>
+			    	<div class="bd">
+		                <ul id="ulGoodsList">
+		                	<li class="tmp_product" style="display: none;">
+		                		<a >
+		                			<img class="prodImg" src="../img/b1704fda8c3343c6855f32134a9c44db.jpg" alt="" width="83" height="83">
+		                			<b>威古氏防晒偏光太阳镜时尚套组</b>
+		                			<div class="tipWrap">
+		                				<span class="sevenday" style="background: url(../img/detail/7984ea16eb2b484d9dff395c71b7af8d.png) no-repeat left top;background-size: 20px auto;">支持7日无理由退货</span>
+		                			</div>
+		                			<span>颜色：共同<i>款式：共同</i></span>
+		                		</a>
+		                		
+		                		<font class="f1 prodPrice">
+		                			<b>￥399.00</b>
+		                		</font>
+		                		<font class="f2 prodNum">x1</font>
+		                		<font class="f3 prodTotalPrice">
+		                			<span>￥399.00</span>
+		                		</font>
+		                	</li>
+		                </ul>
+		                
+		                <p id="spcost_money">商品总金额：￥0.00</p>
+		            </div>
+		            
+		            <div class="ft">
+		                <ul>
+		                    <li>
+		                        <label>优惠券</label>
+		                        <select id="selCoupon" ><option value="">无可用优惠券</option></select>
+		                        <a id="btnOpenyhq" class="dhxj">兑换新劵</a>
+		                        <a id="divyhq" class="ckqb" >查看全部优惠券</a>
+		                    </li>
+		                    <li>
+		                        <label>暂存款</label>
+		                        <input value="0" class="input" id="txt_TemporaryStore"  type="text">
+		                        <font>(可用<i>￥0</i>,您有<i>￥0</i>,仅限直播品)</font>
+		                    </li>
+		                    <li>
+		                        <label>储值金</label>
+		                        <input value="0" class="input" id="txt_StoreGold"  type="text">
+		                        <font>(可用<i>￥0</i>,您有<i>￥0</i>,仅限直播品)</font>
+		                    </li>
+		                    <li id="li_fullcut">
+		                        <label><input value="" type="radio">满减</label>
+		                        满减总金额：<strong>￥0.00</strong>
+		                    </li>
+		                </ul>
+		                <div class="total">优惠总金额：<i id="spsub_money">-￥0.00</i></div>
+		            </div>
+		            
+		            <div class="pay">
+		                <i>运费：￥0.00&nbsp;&nbsp;&nbsp;满减金额：￥0.00</i>
+		                <p>实付款：<b id="b_pay_money">￥0.00</b></p>
+		                <span>
+		                	<a href="cart.html" class="fh" >返回购物车</a>
+		                	<a id="btnOrderCreate" class="tj" >提交订单</a>
+		                </span>
+		            </div>
+			    	
+			    </div>
+			</div>
+			
+			
+			<div class="zheban" style="display: none;"></div>
+			<div class="cont" style="display: none;">
+	            <h2><a id="addAddressClose">关闭</a><span>添加收货地址</span></h2>
+	            <ul>
+	                <li>
+	                	<b>
+	                		<em>*</em>收货人：
+	                	</b>
+	                	<input value="" id="txtName" type="text">
+	                </li>
+	                <li>
+	                    <b><em>*</em>所在地区：</b>
+	                    <select id="selProv"><option value="">请选择</option></select>
+	                    <select id="selCity"><option value="">请选择</option></select>
+	                    <select id="selDistrict"><option value="">请选择</option></select>
+	                </li>
+	                <li>
+	                	<b><em>*</em>详细地址：</b>
+	                	<input value="" class="text" id="txtAddressDetail" type="text">
+	                </li>
+	                <li><b>邮编：</b>
+	                	<input value="" id="txtPostcode" type="text">
+	                </li>
+	                <li>
+	                	<b><em>*</em>联系电话：</b>
+	                	<input value="" id="txtPhoneNo" type="text">
+	                </li>
+	                <li>
+	                    <b><em></em>身份证号：</b>
+	                    <input value="" id="txtIDno" type="text">
+	                    <p>提示：购买海外商品，海关需验证收货人身份证信息，请填写与收货人姓名一致的身份证号！否则将下单失败！</p>
+	                </li>
+	                <li>
+	                    <b><em>*</em>设置默认地址：</b>
+	                    <label><input value="1" name="isdefault"  type="radio">是</label>
+	                    <label><input name="isdefault" value="0"  type="radio">否</label>
+	                </li>
+	                <li class="curr">
+	                	<a id="btn_saveaddress">保存收货地址</a>
+	                </li>
+	            </ul>
+	        </div>
+				
+		</div>
+			
+		<!--尾部-->
+		<footer></footer>
+		
+		<script src="/lib/requirejs/require.js" data-main="/js/buy"></script>
+		
+	</body>
+</html>

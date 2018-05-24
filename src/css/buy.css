@@ -1,0 +1,464 @@
+.centent{
+	overflow: hidden;
+	margin: 0 auto;
+	width: 1200px;
+	position: relative;
+}
+.order {
+    width: 1200px;
+    overflow: hidden;
+    margin: 30px auto;
+}
+.address {
+    overflow: hidden;
+}
+.order .hd {
+    margin-bottom: 0;
+    height: 32px;
+	background: url(../img/hd_bg.jpg) repeat-x left bottom;
+	overflow: hidden;
+}
+ .order .hd span {
+    color: #333;
+    font-size: 12px;
+    float: right;
+	line-height: 22px;
+	padding-top: 8px;
+}
+.order .hd h2 {
+    font-size: 18px;
+    float: left;
+	padding-right: 8px;
+	color: #333;
+	background: #fff;
+	line-height: 24px;
+	padding-top: 4px;
+	padding-bottom: 5px;
+}
+.address .bd {
+    overflow: hidden;
+    margin: 20px 0;
+    position: relative;
+}
+.address .bd ul {
+    overflow: hidden;
+    height: 36px;
+}
+.payment .bd {
+    overflow: hidden;
+    margin: 20px 10px;
+}
+.payment .bd dt.curr {
+    color: #dc0f50;
+}
+.payment .bd dt {
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.order label {
+    display: block;
+    float: left;
+}
+.payment .bd dt input {
+    float: left;
+    margin: 12px 12px 0 0;
+}
+.payment .bd dd {
+    position: relative;
+    display: block;
+    height: 131px;
+    overflow: hidden;
+    padding: 3px 90px 3px 36px;
+}
+.payment .bd dd p {
+    overflow: hidden;
+}
+.payment .bd dd a.curr, 
+.payment .bd dd a:hover {
+    border: 1px solid #dc0f50;
+}
+.payment .bd dd a {
+    display: block;
+    width: 152px;
+    height: 40px;
+    border: 1px solid #e6e7e2;
+    position: relative;
+    float: left;
+    margin: 11px 21px 10px 0;
+}
+.payment .bd dd a i {
+    display: none;
+}
+.payment .bd dd a.curr i, 
+.payment .bd dd a:hover i {
+    display: block;
+    width: 24px;
+    height: 24px;
+    background: url(../img/payment_bg.png) no-repeat;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+.payment .bd dd a img {
+    width: 100%;
+    height: 100%;
+}
+.payment .bd dd p + p {
+    border-top: 1px solid #e5e5e5;
+}
+.payment .bd dd span {
+    display: block;
+    font-size: 12px;
+    color: #333;
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+    background: url(../img/more.png) no-repeat right -26px;
+    top: 50%;
+    margin-top: -12px;
+    cursor: pointer;
+}
+.payment .bd dt {
+    height: 36px;
+    line-height: 36px;
+    color: #666;
+}
+.payment .bd dt input {
+    float: left;
+    margin: 12px 12px 0 0;
+}
+.bill .bd {
+    overflow: hidden;
+    margin: 20px 0 5px 0;
+}
+.confirm .bd {
+    overflow: hidden;
+    padding: 20px 0;
+    border-bottom: 1px solid #e5e5e5;
+}
+.confirm .bd ul {
+    overflow: hidden;
+    padding: 0 0 0 20px;
+}
+.confirm .bd li {
+    margin-bottom: 10px;
+    overflow: hidden;
+    height: 115px;
+    padding: 16px;
+    background: #f6f6f6;
+}
+.confirm .bd li a {
+    margin-right: 0px;
+    display: block;
+    width: 520px;
+    float: left;
+    padding-left: 95px;
+    position: relative;
+}
+.confirm .bd li a:hover b{color: #DC0F50;}
+.confirm .bd li a img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.confirm .bd li a b {
+    display: block;
+    font-size: 12px;
+    line-height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #333;
+    padding: 10px 0 4px 0;
+}
+.confirm .bd li a .tipWrap {
+    color: #333;
+    font-size: 12px;
+}
+.confirm .bd li a .tipWrap .sevenday {
+    display: inline-block;
+    padding-left: 21px;
+    font-size: 14px;
+	line-height: 19px;
+	color: #333;
+	margin-right: 26px;
+}
+.confirm .bd li a span {
+    line-height: 34px;
+    font-size: 12px;
+    color: #999;
+}
+.confirm .bd li a span i {
+    padding-left: 40px;
+}
+.confirm .bd li font {
+    color: #333;
+    display: block;
+    float: left;
+    padding-top: 34px;
+    line-height: 16px;
+    font-size: 12px;
+}
+.confirm .bd li font.f1 {
+    width: 130px;
+    text-align: center;
+}
+.confirm .bd li font.f2 {
+    width: 130px;
+    text-align: center;
+    margin: 0 110px 0 30px;
+}
+.confirm .bd li font.f3 {
+    text-align: center;
+    color: #dc0f50;
+}
+.confirm .bd p {
+    text-align: right;
+    font-size: 18px;
+    color: #333;
+    padding-top: 10px;
+    line-height: 20px;
+    height: 30px;
+    overflow: hidden;
+}
+.confirm .ft {
+    padding: 20px 0 0 0;
+    position: relative;
+    overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+}
+.confirm .ft li {
+    overflow: hidden;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+.confirm .ft li label {
+    display: block;
+    width: 84px;
+    line-height: 26px;
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+.confirm .ft li select {
+    width: 175px;
+    height: 26px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    color: #666;
+    float: left;
+    margin-right: 16px;
+}
+.confirm .ft li a.dhxj {
+    display: block;
+    width: 88px;
+    height: 24px;
+    border: 1px solid #dc0f50;
+    color: #dc0f50;
+    font-size: 14px;
+    text-align: center;
+    float: left;
+    margin-right: 12px;
+}
+.confirm .ft li a.ckqb {
+    color: #666;
+    font-size: 12px;
+    float: left;
+    line-height: 26px;
+    text-decoration: underline;
+}
+.confirm .ft li input.input {
+    width: 163px;
+    height: 24px;
+    border: 1px solid #e5e5e5;
+    padding: 0 5px;
+    float: left;
+    margin-right: 16px;
+}
+.confirm .ft li font {
+    display: block;
+    clear: both;
+    padding-left: 84px;
+    line-height: 14px;
+    height: 14px;
+    padding-top: 6px;
+    font-size: 12px;
+    color: #333;
+}
+.confirm .ft li font i {
+    color: #dc0f50;
+}
+.confirm .ft li label input {
+    float: left;
+    margin: 7px 10px 0 0;
+}
+.confirm .ft .total {
+    font-size: 18px;
+    color: #333;
+    position: absolute;
+    right: 0;
+    bottom: 36px;
+}
+.confirm .ft .total i {
+    color: #3fb35c;
+}
+.confirm .pay {
+    text-align: right;
+    padding: 15px 0;
+}
+.confirm .pay i {
+    display: block;
+    line-height: 30px;
+    color: #999;
+    font-size: 18px;
+}
+.confirm .pay p {
+    font-size: 18px;
+    color: #333;
+    line-height: 48px;
+}
+.confirm .pay p b {
+    font-size: 30px;
+    color: #dc0f50;
+}
+.confirm .pay span {
+    display: block;
+    height: 50px;
+}
+.confirm .pay a {
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    text-align: center;
+    font-size: 20px;
+    color: #dc0f50;
+    border: 1px solid #dc0f50;
+    line-height: 48px;
+    margin-left: 10px;
+}
+.confirm .pay a.tj {
+    background: #dc0f50;
+    color: #fff;
+}
+.confirm .pay a.tj:hover {opacity: 0.9;}
+.zheban{
+	display: block;
+	width: 100%;
+	height: 100%;
+	background: #000;
+	filter: alpha(opacity=20);
+	-moz-opacity: 0.2;
+	opacity: 0.2;
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 999;
+}
+.cont {
+    overflow: hidden;
+    width: 764px;
+    height: 526px;
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    z-index: 1000;
+    margin: -264px 0 0 -382px;
+}
+.cont h2 {
+    height: 34px;
+    line-height: 34px;
+    font-size: 14px;
+    background: #f5f5f5;
+    color: #333;
+    padding: 0 15px;
+}
+.cont h2 a {
+    float: right;
+    color: #666;
+}
+ .cont ul {
+    padding: 23px 0 0 0;
+    overflow: hidden;
+}
+.cont ul li {
+    overflow: hidden;
+    margin-bottom: 22px;
+    line-height: 32px;
+    color: #666;
+    font-size: 14px;
+}	
+.cont ul li b {
+    display: block;
+    width: 132px;
+    float: left;
+    text-align: right;
+    margin-right: 8px;
+    color: #666;
+}
+.cont ul li b em {
+    color: #ff3333;
+    font-family: '宋体';
+    padding-right: 5px;
+}
+.cont ul li input {
+    float: left;
+    margin-right: 15px;
+    width: 160px;
+    line-height: 30px;
+    color: #666;
+    font-size: 14px;
+    height: 30px;
+    border: 1px solid #ccc;
+    padding: 0 10px;
+}
+.cont ul li select {
+    margin-right: 30px;
+    color: #666;
+	width: 105px;
+	height: 32px;
+	border: 1px solid #ccc;
+	float: left;
+}
+ .cont ul li input.text {
+    width: 353px;
+}
+.cont ul li p {
+    clear: both;
+    padding-left: 142px;
+    font-size: 12px;
+    color: #e92d2f;
+    line-height: 20px;
+}
+.cont ul li label {
+    color: #666;
+    display: block;
+    float: left;
+    width: 60px;
+    line-height: 32px;
+}
+ .cont ul li label input {
+    width: 15px;
+    height: 15px;
+    float: left;
+    padding: 0;
+    border: none;
+    margin: 8px 5px 0 0;
+}
+.cont ul li.curr {
+    height: 50px;
+    margin-top: -15px;
+}
+.cont ul li.curr a {
+    display: block;
+    width: 150px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+    background: #dc0f50;
+    color: #fff;
+    font-size: 18px;
+}
