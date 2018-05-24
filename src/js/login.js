@@ -30,6 +30,9 @@ require(["config"],function(){
 						if($user==$.parseJSON(allUsers[i]).phoneNo&&$pass==$.parseJSON(allUsers[i]).pass){
 							console.log("succsee")
 							$.cookie('login',$.parseJSON(allUsers[i]).phoneNo, { expires: 7,path:"/" });
+							$("#login_user").children("#headUserName").html("hi! <a style='float:right;margin:0;padding-left:2px;' href='javascript:void(0)'>"+$.parseJSON(allUsers[i]).phoneNo+"</a>");
+							$("#unlogin_user").css("display","none");
+							$("#login_user").css("display","block");
 							return;
 						}
 					}

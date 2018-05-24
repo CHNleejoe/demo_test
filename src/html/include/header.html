@@ -2,13 +2,18 @@
 	<div class="inner">
 		<a href="javascript:void(0)">收藏</a>
 		<ul>
-			<li>
+			<li id="unlogin_user" style="display: block;">
 				<a href="/index.html">首页</a>
 				<a href="/html/login.html">请登录</a>
 				<a href="/html/register.html">免费注册</a>
 			</li>
+			<li id="login_user" style="display: none;">
+				<a href="/index.html">首页</a>
+				<a id="headUserName" href="javascript:void(0)"></a>
+				<a id="quitLogin" href="javascript:void(0)">退出</a>
+			</li>
 			<li>
-				<p href="/html/cart.html" id="headNum">购物车<span>0</span>件</p>
+				<p id="headNum">购物车<span>0</span>件</p>
 				<a href="#">我的家有</a>
 				<p href="#" id="headYhq">可用优惠券<span>0</span>张</p>
 				<a href="#">我的收藏</a>
@@ -65,7 +70,7 @@
         </div>
         
 		<div class="head_cart"  id="headerCart">
-            <a  class="cart_link">我的购物车<i id="iNum">0</i></a>
+            <a href="/html/cart.html"  class="cart_link">我的购物车<i id="iNum">0</i></a>
             
             <div class="ware_list" id="ware_list" style="display: none;">
                 <!--有商品-->
@@ -93,23 +98,23 @@
             全部商品分类
             <div class="header_nav1_main" id="nav1Main">
                 <div class="" id="nMain">
-                	<a href="javascript:void(0)">海外购</a>
-                	<a href="javascript:void(0)">生活电器</a>
-                	<a href="javascript:void(0)">品质厨房</a>
-                	<a href="javascript:void(0)">厨房电器</a>
-                	<a href="javascript:void(0)">生活家居</a>
-                	<a href="javascript:void(0)">布艺家纺</a>
-                	<a href="javascript:void(0)">服装服饰</a>
-                	<a href="javascript:void(0)">箱包配饰</a>
-                	<a href="javascript:void(0)">美妆个护</a>
-                	<a href="javascript:void(0)">食品饮料</a>
-                	<a href="javascript:void(0)">运动健康</a>
-                	<a href="javascript:void(0)">3C数码</a>
+                	<a href="/html/list.html">海外购</a>
+                	<a href="/html/list.html">生活电器</a>
+                	<a href="/html/list.html">品质厨房</a>
+                	<a href="/html/list.html">厨房电器</a>
+                	<a href="/html/list.html">生活家居</a>
+                	<a href="/html/list.html">布艺家纺</a>
+                	<a href="/html/list.html">服装服饰</a>
+                	<a href="/html/list.html">箱包配饰</a>
+                	<a href="/html/list.html">美妆个护</a>
+                	<a href="/html/list.html">食品饮料</a>
+                	<a href="/html/list.html">运动健康</a>
+                	<a href="/html/list.html">3C数码</a>
                	</div>
             </div>
     </div>
     <ul>
-        <li><a href="index.html" class="curr">首页</a></li>
+        <li><a href="/index.html" class="curr">首页</a></li>
         <li><a href="javascript:void(0)">TV直播</a></li>
         <li><a href="javascript:void(0)">品牌惠</a></li>
         <li><a href="javascript:void(0)" target="_blank">家有购物APP</a></li>

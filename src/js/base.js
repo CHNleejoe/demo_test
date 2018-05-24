@@ -6,6 +6,7 @@ define(["jquery","cookie"],function($){
 			allproducts.forEach(function(index){
 				totalnum+=Number(index.num);	
 			});
+			console.log($("#iNum"))
 			$("#iNum").text(totalnum);
 		}
 	}

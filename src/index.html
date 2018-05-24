@@ -34,17 +34,17 @@
                     <div class="per_conliset" style=" border 1px solid #e5e5e5; margin-bottom 10px;">
                         <div class="personal" id="accountInfo">
                             <!--==未登录==-->
-                            <div class="no" style="">
+                            <div id="no_indexLogin" class="no" style="display: block;">
                                 <div class="hd">
                                     <img src="img/dome_07.png" alt="">
                                     <i>hi！欢迎来到家有购物</i>
                                 </div>
-                                <a class="dl" style="cursor:pointer;" >登 录</a>
-                                <p><a href="html/login.html" style="cursor:pointer;">免费注册</a></p>
+                                <a href="/html/login.html" class="dl" >登 录</a>
+                                <p><a href="html/login.html">免费注册</a></p>
                             </div>
                             <!--==已登录==-->
-                            <div class="yes" style="display:none;">
-                                <div class="hd" onclick=""><a num="202013-11"><img id="headImg" src="img/mrtx.jpg" alt=""><i id="LoginName">hi！</i></a></div>
+                            <div id="yes_indexLogin" class="yes" style="display:none;">
+                                <div class="hd" onclick=""><a><img id="headImg" src="img/mrtx.jpg" alt=""><i id="LoginName">hi！</i></a></div>
                                 <ul>
                                     <li><a onclick="">待收货<i id="DSH">0</i></a></li>
                                     <li><a onclick="">待发货<i id="DFH">0</i></a></li>

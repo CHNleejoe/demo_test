@@ -209,6 +209,15 @@ header .header_links ul li:last-child .ph_ewm em{
 	background: #fff;
 	left: 0;
 	top: 44px;
+	z-index: 999;
+}
+#searchRel .searchLi{
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    color: #333;
+    font-size: 14px;
 }
 header .header_links ul li:last-child a:first-child:hover .ph_ewm{display: block;}
 header .header_links ul li:last-child .wx_ewm{

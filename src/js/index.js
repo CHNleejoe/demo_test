@@ -1,13 +1,25 @@
 // 依赖配置
 require(["config"], function(){
 	// 依赖配置中各短名称的模块
-	require(["jquery", "xmcarousel","base","load"], function($,carousel){
+	require(["jquery", "xmcarousel","cookie","load"], function($,carousel){
 		$(function(){
+			function isIndexLogin(){
+				if ($.cookie("login")) {
+					var login_index=$.parseJSON($.cookie("login"));
+					$("#no_indexLogin").css("display","none");
+					$("#yes_indexLogin").css("display","block");
+					$("#LoginName").text("hi !"+login_index);
+				}
+			}
+			isIndexLogin();
+			
+			
+			
 			$("#index_lunbo").carousel({
 				imgs : [
-					{src:"img/lunbo1.jpg", href:"html/detail.html"},
-					{src:"img/lunbo2.jpg", href:"html/detail.html"},
-					{src:"img/lunbo3.jpg", href:"html/detail.html"},
+					{src:"/img/lunbo1.jpg", href:"/html/detail.html"},
+					{src:"/img/lunbo2.jpg", href:"/html/detail.html"},
+					{src:"/img/lunbo3.jpg", href:"/html/detail.html"}
 				],
 				width: 714,
 				height: 382,
